@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <title>Pagina no encontrada | Oficios App</title>
+  <script>
+    const path = window.location.pathname.replace(/\/$/, "").toLowerCase();
+    if (path === "/oficios.app") {
+      const destination = new URL("https://oficiosapp68.github.io/Oficios.App/");
+      destination.search = window.location.search;
+      destination.hash = window.location.hash;
+      window.location.replace(destination.href);
+    }
+  </script>
+</head>
+<body>
+  <h1>Pagina no encontrada</h1>
+  <p><a href="https://oficiosapp68.github.io/Oficios.App/">Abrir Oficios App</a></p>
+</body>
+</html>
